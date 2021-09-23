@@ -28,6 +28,9 @@ namespace ADO
         }
 
 
+
+        //Execute non query ----- insert and delete query ----------
+
         public static void ExecuteNonQury(string connectionString,string sql,List<SqlParameter> perameters)
         {
 
@@ -52,7 +55,7 @@ namespace ADO
 
 
 
-        //ExecuteQury
+        //ExecuteQuery ----get all data-----
         public static List<Student> ExecuteQury(string connectionString, string sql)
         {
             using SqlCommand command = new SqlCommand();
